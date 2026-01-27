@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+}
+
+.app-container {
+    text-align: center;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.quote-box {
+    margin: 20px auto;
+    max-width: 700px;
+    font-style: italic;
+    font-size: 22px;
+    color: #333;
+}
+
+.target-box {
+    margin: 30px auto;
+    max-width: 600px;
+}
+
+.target-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
