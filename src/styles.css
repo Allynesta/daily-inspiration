@@ -1,65 +1,187 @@
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f4f6f8;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #f4f6f8;
 }
 
 .app-container {
-    text-align: center;
+	text-align: center;
+	padding: 0 16px;
+	max-width: 1280px;
+	margin: 0 auto;
 }
 
 .title {
-    font-size: 32px;
-    font-weight: bold;
-    margin: 20px 0;
+	font-size: 28px;
+	font-weight: bold;
+	margin: 16px 0 8px 0;
+	word-wrap: break-word;
 }
 
 .quote-box {
-    margin: 20px auto;
-    max-width: 700px;
-    font-style: italic;
-    font-size: 22px;
-    color: #333;
+	margin: 16px auto;
+	max-width: 700px;
+	font-style: italic;
+	font-size: 18px;
+	color: #333;
+	padding: 0 12px;
+	line-height: 1.6;
 }
 
 .target-box {
-    margin: 30px auto;
-    max-width: 600px;
+	margin: 24px auto;
+	max-width: 600px;
+	padding: 0 12px;
+}
+
+.target-box h2 {
+	font-size: 20px;
+	margin: 12px 0;
 }
 
 .target-input {
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
+	width: 100%;
+	max-width: 100%;
+	padding: 12px;
+	font-size: 16px;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
 }
 
 .history-container {
-    margin: 40px auto;
-    max-width: 700px;
-    text-align: left;
+	margin: 32px auto;
+	max-width: 700px;
+	text-align: left;
+	padding: 0 12px;
 }
 
 .history-title {
-    font-size: 22px;
-    margin-bottom: 15px;
+	font-size: 18px;
+	margin-bottom: 12px;
 }
 
 .history-card {
-    background: white;
-    padding: 12px 16px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+	background: white;
+	padding: 12px 16px;
+	border-radius: 8px;
+	margin-bottom: 10px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+	word-break: break-word;
 }
 
 .history-date {
-    font-size: 12px;
-    color: #888;
+	font-size: 12px;
+	color: #888;
 }
 
 .history-target {
-    font-size: 16px;
-    margin-top: 4px;
+	font-size: 14px;
+	margin-top: 4px;
+	word-wrap: break-word;
+}
+
+/* Mobile First - Small devices (up to 480px) */
+@media (max-width: 480px) {
+	.app-container {
+		padding: 0 12px;
+	}
+
+	.title {
+		font-size: 24px;
+		margin: 12px 0 6px 0;
+	}
+
+	.quote-box {
+		margin: 12px auto;
+		font-size: 16px;
+		padding: 0 8px;
+	}
+
+	.target-box {
+		margin: 16px auto;
+		padding: 0 8px;
+	}
+
+	.target-box h2 {
+		font-size: 18px;
+		margin: 8px 0;
+	}
+
+	.target-input {
+		padding: 10px;
+		font-size: 16px;
+	}
+
+	.history-container {
+		margin: 24px auto;
+		padding: 0 8px;
+	}
+
+	.history-title {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+
+	.history-card {
+		padding: 10px 12px;
+		margin-bottom: 8px;
+	}
+
+	.history-date {
+		font-size: 11px;
+	}
+
+	.history-target {
+		font-size: 13px;
+	}
+}
+
+/* Tablets and larger devices (481px and up) */
+@media (min-width: 481px) and (max-width: 768px) {
+	.title {
+		font-size: 26px;
+	}
+
+	.quote-box {
+		font-size: 19px;
+	}
+
+	.target-box h2 {
+		font-size: 19px;
+	}
+}
+
+/* Desktop devices (769px and up) */
+@media (min-width: 769px) {
+	.app-container {
+		padding: 0 24px;
+	}
+
+	.title {
+		font-size: 32px;
+		margin: 20px 0;
+	}
+
+	.quote-box {
+		margin: 20px auto;
+		font-size: 22px;
+	}
+
+	.target-box {
+		margin: 30px auto;
+	}
+
+	.target-box h2 {
+		font-size: 22px;
+	}
+
+	.history-container {
+		margin: 40px auto;
+	}
+
+	.history-title {
+		font-size: 22px;
+		margin-bottom: 15px;
+	}
 }
